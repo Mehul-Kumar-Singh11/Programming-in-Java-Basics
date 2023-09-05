@@ -1,0 +1,12 @@
+public class subSequence_Method {
+
+	public static void main(String[] args) {
+		String s = "Geeks for Geeks";
+		System.out.println(s.subSequence(2,10));
+		System.out.println(s.subSequence(0,0));
+		System.out.println(s.subSequence(5,2));
+//		System.out.println(s.subSequence(-2,2));
+
+	}
+
+}
