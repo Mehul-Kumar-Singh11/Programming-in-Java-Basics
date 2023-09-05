@@ -1,0 +1,20 @@
+package Basic_Methods;
+
+public class calculate_length_without_length_method {
+
+	public static void main(String[] args) {
+		// METHOD - 1 
+		String s = "Raju";
+		String s2 = "";
+		 System.out.println(s.compareTo(s2));
+        // METHOD - 2
+		String s1 = "Mehul";
+		char[] ch = s1.toCharArray();
+		int count=0;
+		for(int i : ch) {
+			count++;
+		}
+		System.out.println(count);
+	}
+
+}
