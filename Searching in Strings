@@ -1,0 +1,39 @@
+// indexOf(), lastIndexOf(), contains(), charAt(), startsWith(), endsWith()
+
+package Basic_Methods;
+
+public class Searching_characters_in_a_String {
+
+	public static void main(String[] args) {
+   String s = "Geeks for Geeks Geeks";
+   // <-- INDEX OF -->
+   System.out.println(s.indexOf('e')); // 1
+   System.out.println(s.indexOf("ks")); // 3
+   System.out.println(s.indexOf("e",9)); // 11
+
+   //  <-- LAST INDEX OF -->
+   System.out.println(s.lastIndexOf('e')); //  18
+   System.out.println(s.lastIndexOf("ks")); // 19
+   // <-- CHARAT -->
+   System.out.println(s.charAt(0));  // G
+//   System.out.println(s.charAt(100)); --> java.lang.StringIndexOutOfBoundException
+//   System.out.println(s.charAt(-4)); --> java.lang.StringIndexOutOfBoundException
+   // <-- CONTAINS -->
+   System.out.println(s.contains("e")); // true
+   System.out.println(s.contains("z")); // false
+   System.out.println(s.contains("for")); // true
+//   <-- STARTSWTIH -->
+   System.out.println(s.startsWith("G")); // true
+   System.out.println(s.startsWith("g"));  // false
+//     <-- ENDSWITH -->
+   System.out.println(s.endsWith("s")); // true
+   System.out.println(s.endsWith("a")); // false
+
+
+   
+
+   
+   
+	}
+
+}
