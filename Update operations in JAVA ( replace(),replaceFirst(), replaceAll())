@@ -10,7 +10,8 @@ public class replace_Methods {
    System.out.println(s1.replace('e','r')); // replace character
    System.out.println(s2.replaceFirst("Money","Fame")); // replaces first matching string
    System.out.println(s3.replaceAll("have","had")); // replaces all strings
-   System.out.println(s3.replaceAll("un*","x")); // replaces regex expression
+   System.out.println(s3.replaceAll("un(.)","x")); // replaces regex expression --> You have to do xtil you have time
+   System.out.println(s3.replaceAll("un(.*)","x")); // replaces regex expression --> You have to do x
 	}
 }
 
