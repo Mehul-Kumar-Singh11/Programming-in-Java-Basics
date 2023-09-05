@@ -1,0 +1,28 @@
+// TYPE CONVERSION AND CASE CONVERSION IN STRINGS
+
+package Basic_Methods;
+
+public class Type_Conversion_and_Case_Conversion_in_Strings {
+
+	public static void main(String[] args) {
+//		<-- CASE COMPARISON --> 
+//		1) toUpperCase()  2) toLowerCase()
+    String s = "Mehul";
+    System.out.println(s.toUpperCase());  // MEHUL
+    String s2 = "KUMAR";
+    System.out.println(s.toLowerCase());  // kumar
+    
+    // <-- TYPE COMPARISON -->
+//    1) typeOf 2) toCharArray
+     int a = 10, b = 20;
+     System.out.println(a+b); // 30
+
+     String s3 = String.valueOf(a);  // valueOf() is a static method
+     System.out.println(s3 + b); // 1020
+     // tocharArray()
+     char[] ch = s.toCharArray();
+     System.out.println(java.util.Arrays.toString(ch)); // ['M','e','h','u','l']
+     
+	}
+
+}
