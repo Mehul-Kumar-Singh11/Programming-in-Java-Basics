@@ -1,0 +1,18 @@
+package Basic_Methods;
+
+public class replace_Methods {
+
+	public static void main(String[] args) {
+   String s1 = "'Consistentency is the key' is the proverb.";
+   String s2 = "Money doesn't buy happiness but money can buy all the things that gives happiness";
+   String s3 = "You have to do until you have time";
+   System.out.println(s1.replace("the","there")); // replace string
+   System.out.println(s1.replace('e','r')); // replace character
+   System.out.println(s2.replaceFirst("Money","Fame")); // replaces first matching string
+   System.out.println(s3.replaceAll("have","had")); // replaces all strings
+   System.out.println(s3.replaceAll("un*","x")); // replaces regex expression
+	}
+}
+
+// Difference between replace() and replaceAll()
+// --> replaceAll() method can replace regex expressions also, but replace() method can't.
