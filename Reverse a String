@@ -1,0 +1,35 @@
+package Basic_Methods;
+
+public class Reverse_a_String {
+
+	public static void main(String[] args) {
+    String s = "Mehul";
+    reverse_m1(s);
+    reverse_m2(s);
+    reverse_m3(s);
+	}
+	
+	private static void reverse_m1(String s) {
+		// convert string to array
+		char[] ch = s.toCharArray();
+		int i=0;
+		int j=ch.length-1;
+		while(i<=j) {
+			char temp = ch[i];
+			ch[i] = ch[j];
+			ch[j] = temp;
+		}
+		String str = String.valueOf(ch);
+		System.out.println("Method-1 Reversed string: " +str);
+	}
+    private static void reverse_m2(String s) {
+    	 // using StringBuilder class
+    	 StringBuilder sb = new StringBuilder(s);
+    	 sb.reverse();
+    	 String str = new String(sb);
+    	 System.out.println("Method-2 Reversed String: " +str);
+    	 }
+    private static void reverse_m3(String s) {
+    	
+    }
+}
